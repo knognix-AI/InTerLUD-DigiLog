@@ -1,0 +1,20 @@
+# .gitlab-ci.yml
+stages:
+  - test
+  - build
+  - deploy
+
+test-job:
+  stage: test
+  script:
+    - echo "Running tests..."
+
+build-job:
+  stage: build
+  script:
+    - echo "Building project..."
+
+deploy-job:
+  stage: deploy
+  script:
+    - echo "Deploying..."
